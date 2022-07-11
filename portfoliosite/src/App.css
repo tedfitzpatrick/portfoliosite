@@ -30,11 +30,14 @@ body {
 #232f3e 
 */
 
-/* a:link    { color: blue; }
-a:visited { color: purple; }
-a:hover   { color: red; }
-a:focus   { outline: 1px solid blue; }
-a:active  { color: yellow ;} */
+a:link    { 
+  color:#0F1111;
+  text-decoration: none; 
+}
+a:visited { color: #0F1111; }
+a:hover   { color: #0F1111; }
+a:focus   { outline: #0F1111; }
+a:active  { color: #0F1111 ;}
 
 
 header {
@@ -44,6 +47,11 @@ header {
   text-align: left;
   height: auto;
   padding: 10px;
+  position: relative;
+}
+
+header > h1 {
+  
 }
 
 header > h1 > span {
@@ -56,13 +64,87 @@ header > h1 > span {
   font-weight: normal;
 }
 
+#tf-contactbuttonopen {
+  position: absolute;
+  top:10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+
+}
+
 #svgiconperson {
+  display: block;
   width: 40px;
   height: auto;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  
+
 }
 #svgiconperson path {
   fill:white;
 }
+
+.tf-contact {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0);
+}
+.tf-contact.tf-contactactive {
+  background-color: rgba(0,0,0,.6);
+  left: 0;
+}
+
+#tf-contactbuttonclose {
+  position: absolute;
+  top:30px;
+  left: 0;
+  width: 25vw;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight:normal;
+  font-size: 50px;
+  text-align: center;
+}
+.tf-contactcontainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 75vw;
+  height: 100vh;
+  background-color: white;
+}
+.tf-contactheader {
+  background-color: #232f3e;
+  height:125px;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.tf-contactheader > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.tf-contactbody {
+  background-color: transparent;
+ padding: 18px;
+font-size: 1.125rem;
+}
+.tf-contactbody h3,.tf-contactbody p {
+margin-bottom: 1.25rem;
+}
+
 
 nav {
   background-color: #232f3e;
@@ -72,8 +154,14 @@ nav {
   height: 48px;
   padding: 10px;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
+
+nav a:link    { color:white;}
+nav a:visited { color: white; }
+nav a:hover   { color: white; }
+nav a:focus   { outline: white; }
+nav a:active  { color: white ;}
 
 nav > ul {
   list-style-type: none;
@@ -97,9 +185,12 @@ nav > ul a {
 /* d5dbdb */
 main {
   height:100vh;
-  background: linear-gradient(0deg, rgba(213,219,219,1) 0%, rgba(213,219,219,1) 35%, rgba(246,222,92,1) 67%, rgba(246,222,92,1) 100%);
+  background-color: rgba(213,219,219,1);
 }
-
+.tf-mainbkgd {
+  height:700px;
+  background: linear-gradient(0deg, rgba(213,219,219,1) 0%, rgba(213,219,219,1) 60%, rgba(246,222,92,1) 65%, rgba(246,222,92,1) 100%);
+}
 
 
 
