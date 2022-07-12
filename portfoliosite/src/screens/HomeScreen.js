@@ -10,7 +10,7 @@ const HomeScreen = () => {
         <div className="tf-homedelivering"><p><SvgIconMapPointer /> Delivering prime UI</p></div>
         <div className="tf-mainwrapper">    
         <div className="tf-hero tf-herohome">
-        <h1>Home Screen</h1>
+        <h1>Home Screen Test</h1>
         </div>
         <div className="tf-cards">
         <div className="tf-card">Visuals</div>
