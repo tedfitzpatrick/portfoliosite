@@ -22,9 +22,12 @@ body {
 
 #root {
   margin: 0;
-  padding: 0;  
+  padding: 0; 
+  height: 100%; 
 }
-
+.App {
+  height: 100%;
+}
 /* 
 #131921
 #232f3e 
@@ -71,8 +74,12 @@ header > h1 > span {
   width: 40px;
   height: 40px;
   background-color: transparent;
+  border-radius:3px;
   border: none;
-
+}
+#tf-contactbuttonopen:hover {
+  cursor: pointer;
+  outline: 1px solid white;
 }
 
 #svgiconperson {
@@ -88,7 +95,22 @@ header > h1 > span {
 #svgiconperson path {
   fill:white;
 }
-
+@keyframes contactBkgdFadeOut {
+  0% {
+    background-color: rgba(0,0,0,.6);
+  }
+  100% {
+    background-color: rgba(0,0,0,0);
+  }
+}
+@keyframes contactBkgdFadeIn {
+  0% {
+    background-color: rgba(0,0,0,0);
+  }
+  100% {
+    background-color: rgba(0,0,0,.6);
+  }
+}
 .tf-contact {
   position: absolute;
   top: 0;
@@ -96,10 +118,14 @@ header > h1 > span {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,0);
+  /* animation: contactBkgdFadeOut .1s forwards; */
+  transition: left .2s;
 }
 .tf-contact.tf-contactactive {
-  background-color: rgba(0,0,0,.6);
-  left: 0;
+  /* background-color: rgba(0,0,0,.6); */
+  animation: contactBkgdFadeIn .2s forwards;
+  animation-delay: .2s;
+  left: 0%;
 }
 
 #tf-contactbuttonclose {
@@ -114,6 +140,9 @@ header > h1 > span {
   font-weight:normal;
   font-size: 50px;
   text-align: center;
+}
+#tf-contactbuttonclose:hover {
+  cursor: pointer;
 }
 .tf-contactcontainer {
   position: absolute;
@@ -157,11 +186,7 @@ nav {
   font-size: 1.1rem;
 }
 
-nav a:link    { color:white;}
-nav a:visited { color: white; }
-nav a:hover   { color: white; }
-nav a:focus   { outline: white; }
-nav a:active  { color: white ;}
+
 
 nav > ul {
   list-style-type: none;
@@ -173,24 +198,41 @@ nav > ul {
   justify-content: space-between;
 }
 
-nav > ul a {
-  color: #fff;
+nav > ul a:link    { 
+  color:white;
   text-decoration: none;
-  padding: 10px;
-  /* font-size: 1.2rem;
-  font-weight: normal; */
+  border-radius: 3px;
+  margin:5px;
+  padding: 5px;
 }
+nav > ul a:visited { color: white; }
+nav > ul a:hover   { 
+  color: white; 
+  outline: 1px solid white;
+}
+nav > ul a:focus   { 
+  color: white;
+}
+nav > ul a:active  { color: white ;}
+
+
 
 /* f6de5c */
 /* d5dbdb */
 main {
-  height:100vh;
+  height:100%;
   background-color: rgba(213,219,219,1);
 }
-.tf-mainbkgd {
-  height:700px;
-  background: linear-gradient(0deg, rgba(213,219,219,1) 0%, rgba(213,219,219,1) 60%, rgba(246,222,92,1) 65%, rgba(246,222,92,1) 100%);
+.tf-mainwrapper {
+  max-width: 1870px;
+  height: 100%;
+  margin: 0 auto;
 }
+.tf-mainwrapperhome {
+  background: linear-gradient(0deg, rgba(213,219,219,1) 0px, rgba(213,219,219,1) 150px, rgba(246,222,92,1) 160px, rgba(246,222,92,1) 200px);
+}
+
+
 
 
 
@@ -210,7 +252,17 @@ main {
   .tf-title {
     display: inline;
   }
-  
+
+  .tf-contactcontainer {
+    width: 400px;
+  }
+
+  #tf-contactbuttonclose {
+    left: auto;
+    right: 425px;
+    width: 40px;
+  }
+
   nav > ul {
     justify-content: flex-start;
   }

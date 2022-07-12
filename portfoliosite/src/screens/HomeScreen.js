@@ -3,9 +3,13 @@ import React from "react";
 const HomeScreen = () => {
 
     return (
-        <div>
+        
+        <div className="tf-mainwrapper tf-mainwrapperhome">    
         <h1>Home Screen</h1>
         </div>
+        
+        
+        
     );
     }
 
