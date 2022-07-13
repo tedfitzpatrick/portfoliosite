@@ -12,11 +12,13 @@ const HomeScreen = () => {
         <div className="tf-hero tf-herohome">
         <h1>Home Screen Test</h1>
         </div>
+        <div className="tf-cardsscroller">
         <div className="tf-cards">
         <div className="tf-card">Visuals</div>
         <div className="tf-card">UI</div>
         <div className="tf-card">Code</div>
         <div className="tf-card">About</div>
+        </div>
         </div>
         </div>
         </>
