@@ -5,7 +5,6 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import AppRoutes from './AppRoutes';
 import SvgIconPerson from './assets/svgiconperson';

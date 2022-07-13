@@ -3,8 +3,8 @@ import React from "react";
 const NotFoundScreen = () => {
 
     return (
-        <div>
-        <h1>Not Found</h1>
+        <div className="tf-mainwrapper">
+        <h2>Not Found</h2>
         </div>
     );
     }

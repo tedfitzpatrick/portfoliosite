@@ -3,8 +3,8 @@ import React from "react";
 const UIScreen = () => {
 
     return (
-        <div>
-        <h1>UI Screen</h1>
+        <div className="tf-mainwrapper">
+        <h2>UI Screen</h2>
         </div>
     );
     }
