@@ -25,18 +25,22 @@ const HomeScreen = () => {
         <div className="tf-cards">
         <div className="tf-card"><a href="/visuals">
             <h4>Visuals</h4>
+            <p className="tf-cardaddtnl">A memorial, a newsletter, and an organizational chart.</p>
             <div className="tf-cardimgwrapper"><img src={ImgHonorDisplay} alt="visuals" /></div>
             </a></div>
         <div className="tf-card"><a href="/ui">
             <h4>UI</h4>
+            <p className="tf-cardaddtnl">A publications browser, an accordion widget, and a toggle control.</p>
             <div className="tf-cardimgwrapper"><img src={ImgScreenSmallPubs} alt="ui" /></div>
             </a></div>
         <div className="tf-card"><a href="/code">
             <h4>Code</h4>
+            <p className="tf-cardaddtnl">A more powerful, state-driven UI system.</p>
             <div className="tf-cardimgwrapper"><img src={ImgCode} alt="code" /></div>
             </a></div>
         <div className="tf-card"><a href="/about">
             <h4>About</h4>
+            <p className="tf-cardaddtnl">A dad who loves all nerdy things.</p>
             <div className="tf-cardimgwrapper"><img src={ImgTed} alt="about" /></div>
             </a></div>
         </div>
