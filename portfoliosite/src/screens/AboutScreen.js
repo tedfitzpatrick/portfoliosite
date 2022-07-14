@@ -11,7 +11,7 @@ const AboutScreen = () => {
         <div className="tf-contentblock">
          <p>I'm a dad and love dad jokes. I live in northern California and I enjoy cooking, exercise, and all things geeky / nerdy.</p>  
          <div className="tf-contentblockimages">
-        <div className="tf-contentblockimage"><img src={ImgTed} /></div>
+        <div className="tf-contentblockimage"><img src={ImgTed} alt='' /></div>
         </div>
         </div>  
         </div>

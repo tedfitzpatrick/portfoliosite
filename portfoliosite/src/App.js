@@ -1,9 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route
+  BrowserRouter as Router
 } from 'react-router-dom';
 
 import AppRoutes from './AppRoutes';

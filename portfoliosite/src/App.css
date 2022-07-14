@@ -1,18 +1,14 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
-  /* min-height: 100vh; */
   width: 100vw;
   height: 100%;
   -webkit-overflow-scrolling: touch;
   overflow-x: hidden;
 }
-
 body {
   font-family: 'Amazon Ember', sans-serif;
   font-family: 'Amazon Ember Cd RC', sans-serif;
@@ -21,23 +17,12 @@ body {
   font-family: 'Amazon Ember Mono', sans-serif;
   font-family: 'Amazon Ember V2', sans-serif;
   color: #0F1111;
-  /* min-height:100vh;
-  display: flex; */
   overflow-x: hidden;
-  /* overflow-y: hidden; */
   width: 100vw;
   height: 100%;
   overflow-x: hidden;
 }
-
-
-
-
 #root {
-  /* flex-grow:1;
-  display: flex;
-  justify-content: center;
-  align-items: center; */
   margin: 0;
   padding: 0; 
   width: 100vw;
@@ -47,21 +32,8 @@ body {
 .App {
   width: 100vw;
   height: 100%;
-  /* width: 100%;
-  max-width: 100vw;
-  min-height: 100vh;
-  min-inline-size: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; */
-  /* align-items: center; */
   overflow-x: hidden;
 }
-/* 
-#131921
-#232f3e 
-*/
-
 a:link    { 
   color:#0F1111;
   text-decoration: none; 
@@ -70,32 +42,22 @@ a:visited { color: #0F1111; }
 a:hover   { color: #0F1111; }
 a:focus   { outline: #0F1111; }
 a:active  { color: #0F1111 ;}
-
-
 header {
   background-color: #232f3e;
   color: #fff;
-  /* padding: 20px; */
   text-align: left;
   height: auto;
   padding: 10px;
   position: relative;
 }
-
-header > h1 {
-  
-}
-
 header > h1 > span {
   display: block;
 }
-
 .tf-title {
   color: #cccccc;
   font-size: 1rem; 
   font-weight: normal;
 }
-
 #tf-contactbuttonopen {
   position: absolute;
   top:10px;
@@ -108,9 +70,7 @@ header > h1 > span {
 }
 #tf-contactbuttonopen:hover {
   cursor: pointer;
-  /* outline: 1px solid white; */
 }
-
 #svgiconperson {
   display: block;
   width: 40px;
@@ -118,8 +78,6 @@ header > h1 > span {
   position: absolute;
   top: 7px;
   left: 7px;
-  
-
 }
 #svgiconperson path {
   fill:white;
@@ -148,18 +106,15 @@ header > h1 > span {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,0);
-  /* animation: contactBkgdFadeOut .1s forwards; */
   transition: left .2s;
   display: none;
 }
 .tf-contact.tf-contactactive {
-  /* background-color: rgba(0,0,0,.6); */
   display: block;
   animation: contactBkgdFadeIn .2s forwards;
   animation-delay: .2s;
   left: 0%;
 }
-
 #tf-contactbuttonclose {
   position: absolute;
   top:10px;
@@ -205,8 +160,6 @@ font-size: 1.125rem;
 .tf-contactbody h3,.tf-contactbody p {
 margin-bottom: 1.25rem;
 }
-
-
 nav {
   background-color: #232f3e;
   color: #fff;
@@ -217,9 +170,6 @@ nav {
   font-weight: 500;
   font-size: 1.1rem;
 }
-
-
-
 nav > ul {
   list-style-type: none;
   margin: 0;
@@ -229,7 +179,6 @@ nav > ul {
   flex-direction: row;
   justify-content: space-between;
 }
-
 nav > ul a:link    { 
   color:white;
   text-decoration: none;
@@ -240,19 +189,12 @@ nav > ul a:link    {
 nav > ul a:visited { color: white; }
 nav > ul a:hover   { 
   color: white; 
-  /* outline: 1px solid white; */
 }
 nav > ul a:focus   { 
   color: white;
 }
 nav > ul a:active  { color: white ;}
-
-
-
-/* f6de5c */
-/* d5dbdb */
 main {
-  /* height:100%; */
   min-height: 100vh;
   background-color: rgba(213,219,219,1);
 }
@@ -275,19 +217,15 @@ main {
 #svgiconmappointer g path {
   fill:white;
 }
-
 .tf-mainwrapper {
-  /* width: 100vw; */
   max-width: 1870px;
   height: 100%;
   margin: 0 auto;
-  /* padding: 10px; */
 }
 /* home */
 .tf-hero {
   height:300px;
   color:#242f3d;
-
 }
 .tf-herohome {
   background: linear-gradient(0deg, rgba(213,219,219,1) 0%, rgba(246,222,92,1) 20%, rgba(246,222,92,1) 30%);
@@ -295,9 +233,6 @@ main {
 .tf-heroinner {
   width: 100%;
   height: 300px;
-  /* background-image: url('./assets/heroimghome.png');
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
 .tf-heroinnerhome {
   background-image: url('./assets/heroimghome.png');
@@ -317,7 +252,6 @@ main {
 .tf-herotext h3 {
   font-size: 1.33rem;
 }
-
 .tf-cardsscroller {
   width:100vw;
   overflow-x: scroll;
@@ -325,7 +259,6 @@ main {
   scrollbar-width: none; /* Firefox */
   height: 250px;
   transform: translateY(-54px);
-  /* margin: 0; */
   -webkit-overflow-scrolling: touch;
 }
 .tf-cardsscroller::-webkit-scrollbar {
@@ -420,7 +353,6 @@ main {
 .tf-contentblock ul {
   margin-left: 1em;
 }
-
 .tf-contentblockimages {
   margin-top: 2em;
 }
@@ -510,7 +442,6 @@ main {
   .tf-cards {
     width:100%;
     grid-template-columns: 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr; */
     gap: 25px;
     margin: 0 0 0 0;
     padding:0 25px 0 25px;
@@ -534,7 +465,6 @@ main {
     bottom:auto;
     top: 20px;
     left: 20px;
-    /* right: 20px; */
   }
   .tf-cards .tf-card:nth-of-type(1) img {
     width:200px;
@@ -560,7 +490,6 @@ main {
     display: block;
   }
 
-
   /* content screens */
 .tf-mainwrapper h2 {
   font-size: 2rem; 
@@ -573,20 +502,16 @@ main {
   padding-left: 0; 
 } 
 .tf-contentblocks {
-    /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
 }
 .tf-contentblock {
-    background: #fff;
+  background: #fff;
   padding:20px;
   margin-top: 20px;
   margin-left: 20px;
   width:30%;
-  /* max-width: 768px; */
-  }
-
-  
+}
 
   
   .tf-contentblock.tf-contentblocksingleton {
@@ -602,29 +527,12 @@ main {
   width: 100%;
   height: auto;
 }
-
-
-
-
 }
 
 @media screen and (min-width: 992px) {
-
-  .tf-heroinnerhome {
+ .tf-heroinnerhome {
    background-position: right 70px;
-   
-  }
-
-  .tf-contentblocks {
-    /* display: flex;
-    flex-direction: row; */
-
-  }
-  .tf-contentblock {
-    /* width: 50%; */
-
-  }
-
+   }
 }  
 
 @media screen and (min-width: 1280px) {
@@ -641,7 +549,6 @@ main {
     width: 30%;
 
   }
-
 
 }  
 

@@ -1,9 +1,5 @@
 import React from "react";
 
-import ImgPubsWide from './../assets/screen-wide-pubs.png';
-import ImgPubsSmall from './../assets/screen-small-pubs.png';
-import ImgAccordion from './../assets/screen-accordion.png';
-
 import ImgEntry from './../assets/code-bundle-entry.png';
 import ImgGoogle from './../assets/code-bundle-google.png';
 import ImgOptional from './../assets/code-bundle-optional.png';
@@ -13,8 +9,6 @@ import ImgUtils from './../assets/code-bundle-utils.png';
 import ImgReact from './../assets/code-react.png';
 import ImgWebpackMagic from './../assets/code-webpackmagic.png';
 import ImgWebpackSplitChunks from './../assets/code-webpacksplitchunks.png';
-
-
 
 const CodeScreen = () => {
 
@@ -32,12 +26,14 @@ const CodeScreen = () => {
             <li>Improved caching by splitting features into independently deployable module bundles</li>
             </ul>  
          <div className="tf-contentblockimages">
-        <div className="tf-contentblockimage"><img src={ImgEntry} /><p>"Entry" is the Webpack name for the main script and module loader.</p></div>
-        <div className="tf-contentblockimage"><img src={ImgOptional} /><p>I made a module that determines which optional modules to load.</p></div>
-        <div className="tf-contentblockimage"><img src={ImgWebpackMagic} /><p>Webpack provides a "magic comments" syntax to configure optionally loaded modules.</p></div>
-        <div className="tf-contentblockimage"><img src={ImgTemplate} /><p>One kind of optional module is for the screen's layout.</p></div>
-        <div className="tf-contentblockimage"><img src={ImgWebpackSplitChunks} /><p>Some modules are global via splitchunks in webpack.config.</p></div>
-        <div className="tf-contentblockimage"><img src={ImgReact} /><p>I used React for many modules.</p></div>
+        <div className="tf-contentblockimage"><img src={ImgEntry} alt='' /><p>"Entry" is the Webpack name for the main script and module loader.</p></div>
+        <div className="tf-contentblockimage"><img src={ImgOptional} alt='' /><p>I made a module that determines which optional modules to load.</p></div>
+        <div className="tf-contentblockimage"><img src={ImgWebpackMagic} alt='' /><p>Webpack provides a "magic comments" syntax to configure optionally loaded modules.</p></div>
+        <div className="tf-contentblockimage"><img src={ImgTemplate} alt='' /><p>One kind of optional module is for the screen's layout.</p></div>
+        <div className="tf-contentblockimage"><img src={ImgGoogle} alt='' /><p>Some modules make calls to external APIs.</p></div>
+        <div className="tf-contentblockimage"><img src={ImgWebpackSplitChunks} alt='' /><p>Some modules are global via splitchunks in webpack.config.</p></div>
+        <div className="tf-contentblockimage"><img src={ImgPhases} alt='' /><p>My UI system uses Event Emitters and Promises to establish loading phases: for example to transform DOM elements into structures expected by the main design system before main runs.</p></div>
+        <div className="tf-contentblockimage"><img src={ImgReact} alt='' /><p>I used React for many modules.</p></div>
         </div>
         </div>     
         </div>
